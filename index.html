@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Простое приложение для управления бюджетом">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 9</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <section class="ad">
+    <span>Free Shipping on US Orders Over $60
+    </span>
+  </section>
+  <button class="aside-open" aria-label="Открыть боковое меню">
+    <img src="img/menu.svg" alt="Меню">
+  </button>
+  <header class="header">
+    <div class="container flex row header-container">
+      <menu class="header-menu">
+        <ul class="flex row">
+          <li><a href="" class="dark">Shop</a></li>
+          <li><a href="" class="dark">The Edit</a></li>
+          <li><a href="" class="dark">Our Story</a></li>
+          <li><a href="" class="dark">Reviews</a></li>
+        </ul>
+      </menu>
+      <a href="" class="logo">
+        <img src="img/logo.svg" alt="Логотип">
+      </a>
+      <div class="header-actions flex row">
+        <a href="" class="dark">Account</a>
+        <a href="" class="cart dark flex row" aria-label="Корзина">
+          <figure>
+            <img src="img/cart.svg" alt="Корзина">
+          </figure>
+          0
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+      </div>
+    </section>
+    <section class="shop-now" id="shop-now">
+      <div class="container">
+      </div>
+    </section>
+    <section class="carouselle" id="carouselle">
+      <div class="container features__container">
+      </div>
+    </section>
+    <section class="shop-sets">
+      <div class="container">
+      </div>
+    </section>
+    <section class="interview" id="interview">
+      <div class="container">
+      </div>
+    </section>
+    <section class="follow" id="follow">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+    </div>
+  </footer>
+  <aside>
+    <button class="aside-button__menu-close" aria-label="Кнопка для закрытия меню"></button>
+    <a href="" class="logo">
+      <img src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="aside__nav">
+      <ul class="nav__list aside__nav__list">
+        <li class="nav__item"><a href="#description" class="nav__link">обзор</a></li>
+        <li class="nav__item"><a href="#overview" class="nav__link">особенности</a></li>
+        <li class="nav__item"><a href="#features" class="nav__link">технология</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">контакты</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="aside__login" aria-label="Кнопка войти">вход</button>
+  </aside>
+  <script>
+    const closeMenu = document.querySelector('.aside-button__menu-close');
+    const openMenu = document.querySelector('.aside-open');
+    const navLinks = document.querySelectorAll('.nav__link');
+    const aside = document.querySelector('aside');
+    function openAside() {
+      console.log('вызов aside')
+      console.log(aside)
+      aside.classList.add('openned');
+    }
+
+    function closeAside() {
+      console.log('закрытие aside')
+      aside.classList.remove('openned');
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeAside);
+    });
+
+    openMenu.addEventListener('click', openAside);
+    closeMenu.addEventListener('click', closeAside);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.pick {
+  background: #f6f4ec;
+
+  .container {
+    .pick-article {
+      align-items: center;
+      width: 100%;
+
+      h2 {
+        font-size: 23px;
+        line-height: 170%;
+        margin-block: 40px;
+      }
+
+      .pick-items {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 3.45rem 3.45rem;
+        column-gap: 4rem;
+
+        .pick-item {
+          gap: 8px;
+
+          img {
+            max-width: 380px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 140%;
+            text-transform: uppercase;
+          }
+
+          span {
+            font-size: 16px;
+            line-height: 100%;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .pick-container {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .pick .container .pick-article .pick-items {
+    flex-direction: column;
+    row-gap: 40px;
+
+    .pick-item {
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+  }
+}

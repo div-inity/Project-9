@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto.ttf") format("truetype");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -11,6 +10,7 @@
   --second-family-700: "Lato-700", sans-serif;
   --primary-accent: #b45f4d;
   --secondary: #a9ae8d;
+  --light-color: #f6f4ec;
 }
 
 header {
@@ -86,6 +86,53 @@ header .header-container .header-actions .cart {
     max-width: 100% !important;
   }
 }
+.shop-now {
+  background-color: var(--secondary);
+  height: 304px;
+  color: var(--light-color);
+  font-size: 20px;
+}
+.shop-now .container {
+  height: 100%;
+  padding: 3.45rem;
+}
+.shop-now .container .shop-now-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.shop-now .container .shop-now-text p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  flex-grow: 0.6;
+}
+.shop-now .container .shop-now-text h1 {
+  font-size: 33px;
+  flex-grow: 1;
+}
+.shop-now .container .shop-now-text a {
+  color: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .shop-now-container {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .shop-now .container .shop-now-text h1 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 430px) {
+  .shop-now .container .shop-now-text h1 {
+    font-size: 1.2em;
+  }
+}
 html {
   scroll-behavior: smooth;
   font-size: 20px;
@@ -100,6 +147,7 @@ html {
   padding: 0;
   transition: 1s all;
   font-family: var(--font-family);
+  font-weight: 400;
 }
 
 button {

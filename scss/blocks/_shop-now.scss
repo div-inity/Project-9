@@ -48,7 +48,11 @@
 }
 
 @media screen and (max-width: 430px) {
-  .shop-now .container .shop-now-text h1 {
-    font-size: 1.2em;
+  .shop-now .container {
+    padding: 1.5rem;
+
+    .shop-now-text h1 {
+      font-size: 1.2em;
+    }
   }
 }

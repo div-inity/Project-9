@@ -1,5 +1,5 @@
 .pick {
-  background: #f6f4ec;
+  background: var(--light-color);
 
   .container {
     .pick-article {
@@ -62,5 +62,11 @@
       align-items: center;
       align-content: center;
     }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .pick .container .pick-article .pick-items {
+    padding: 0 1.5rem 3.45rem;
   }
 }

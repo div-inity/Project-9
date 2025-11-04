@@ -129,12 +129,15 @@ header .header-container .header-actions .cart {
   }
 }
 @media screen and (max-width: 430px) {
+  .shop-now .container {
+    padding: 1.5rem;
+  }
   .shop-now .container .shop-now-text h1 {
     font-size: 1.2em;
   }
 }
 .pick {
-  background: #f6f4ec;
+  background: var(--light-color);
 }
 .pick .container .pick-article {
   align-items: center;
@@ -186,6 +189,100 @@ header .header-container .header-actions .cart {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+  }
+}
+@media screen and (max-width: 530px) {
+  .pick .container .pick-article .pick-items {
+    padding: 0 1.5rem 3.45rem;
+  }
+}
+.shop-sets {
+  font-size: 20px;
+}
+.shop-sets .container {
+  padding-bottom: 2.5em;
+  padding-inline: 5.5em;
+  padding-top: 1.2em;
+}
+.shop-sets .container figure {
+  width: 100%;
+  position: relative;
+}
+.shop-sets .container figure img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 1219px;
+  width: 100%;
+  height: auto;
+}
+.shop-sets .container figure figcaption {
+  background-color: #df9b7a;
+  justify-content: space-between;
+  height: 4.6em;
+  padding-inline: 1.5em;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  max-width: 1219px;
+  width: 100%;
+}
+.shop-sets .container figure figcaption p {
+  font-size: 1em;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+.shop-sets .container figure figcaption a {
+  font-size: 0.9em;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 1500px) {
+  .shop-sets-container {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .shop-sets {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .shop-sets {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .shop-sets {
+    /* font-size: 18px; */
+  }
+  .shop-sets .container {
+    padding-inline: 3.5em;
+  }
+  .shop-sets .container figure figcaption {
+    height: 3.6em;
+  }
+}
+@media screen and (max-width: 730px) {
+  .shop-sets .container figure figcaption {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-block: 10px;
+    position: relative;
+    bottom: 5px;
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .shop-sets .container {
+    padding-inline: 1.5em;
+  }
+  .shop-sets .container figure img {
+    height: 250px;
+    -o-object-position: top left;
+       object-position: top left;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 html {
@@ -263,7 +360,7 @@ ul {
   aspect-ratio: 1/1;
   position: fixed;
   right: -20px;
-  top: 50%;
+  top: 45%;
   display: none;
   align-items: center;
   justify-content: center;

@@ -285,6 +285,72 @@ header .header-container .header-actions .cart {
        object-fit: cover;
   }
 }
+.interview {
+  background: #f1d3b9;
+  font-size: 20px;
+}
+.interview .container {
+  padding: 61px 183px;
+}
+.interview .container img {
+  max-width: 31.6em;
+  width: 100%;
+  height: auto;
+  max-height: 47.35em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.interview .container .interview-text {
+  background: #f8f8f8;
+  padding: 50px;
+  width: 25.9em;
+  margin-left: -2.5em;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 11.2em;
+  row-gap: 28px;
+}
+.interview .container .interview-text h3 {
+  font-size: 30px;
+  line-height: 192%;
+  align-self: center;
+}
+.interview .container .interview-text p {
+  font-size: 19px;
+  line-height: 160%;
+}
+.interview .container .interview-text a {
+  color: inherit;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+@media screen and (max-width: 1500px) {
+  .interview-container {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .interview-container {
+    justify-content: center;
+  }
+  .interview-container .interview-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .interview-container .interview-block .interview-text {
+    margin-left: 0;
+    margin-top: -2.5em;
+  }
+}
+@media screen and (max-width: 520px) {
+  .interview .container {
+    padding: 61px 0;
+  }
+  .interview .container .interview-block .interview-text {
+    width: 100%;
+  }
+}
 html {
   scroll-behavior: smooth;
   font-size: 20px;

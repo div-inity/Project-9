@@ -1,0 +1,29 @@
+.follow {
+  .container {
+    .follow-flex {
+      align-items: center;
+
+      h2 {
+        font-size: 23px;
+        line-height: 170%;
+        text-transform: capitalize;
+        margin-top: 25px;
+        margin-bottom: 48px;
+      }
+
+      .follow-imgs {
+        justify-content: center;
+        column-gap: 9.78px;
+        flex-wrap: wrap;
+
+        img {}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .follow-container {
+    max-width: 100% !important;
+  }
+}

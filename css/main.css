@@ -351,6 +351,27 @@ header .header-container .header-actions .cart {
     width: 100%;
   }
 }
+.follow .container .follow-flex {
+  align-items: center;
+}
+.follow .container .follow-flex h2 {
+  font-size: 23px;
+  line-height: 170%;
+  text-transform: capitalize;
+  margin-top: 25px;
+  margin-bottom: 48px;
+}
+.follow .container .follow-flex .follow-imgs {
+  justify-content: center;
+  -moz-column-gap: 9.78px;
+       column-gap: 9.78px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1500px) {
+  .follow-container {
+    max-width: 100% !important;
+  }
+}
 html {
   scroll-behavior: smooth;
   font-size: 20px;

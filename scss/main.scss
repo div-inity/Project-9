@@ -118,7 +118,7 @@ ul {
 }
 
 aside {
-  background-color: var(--secondary);
+  background-color: var(--light-color);
   transform: translateX(-100%);
   position: fixed;
   height: 100vh;
@@ -128,6 +128,51 @@ aside {
   flex-direction: column;
   align-items: center;
   z-index: 100;
+  overflow: hidden;
+
+  .aside-close {
+    background-color: var(--secondary);
+    border-radius: 50px;
+    border: unset;
+    height: 50px;
+    aspect-ratio: 1/1;
+    position: fixed;
+    right: -20px;
+    top: 45%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+
+    img {
+      object-fit: contain;
+      height: 60%;
+      width: 60%;
+    }
+  }
+
+  .aside-menu {
+    ul {
+      row-gap: 15px;
+      font-size: 27px;
+      margin-top: 30px;
+      align-items: center;
+    }
+  }
+
+  .aside-actions {
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      font-size: 27px;
+
+    }
+  }
+
+  .logo {
+    order: 0;
+  }
 
   &.openned {
     transform: translateX(0);

@@ -187,6 +187,7 @@
     function closeAside() {
       console.log('закрытие aside')
       aside.classList.remove('openned');
+      body.style.overflow = 'auto';
     }
 
     openMenu.addEventListener('click', openAside);

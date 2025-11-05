@@ -21,6 +21,10 @@
       height: 48px;
       color: #fff;
       font-size: 17px;
+
+      &:hover {
+        background-color: var(--secondary);
+      }
     }
   }
 }
